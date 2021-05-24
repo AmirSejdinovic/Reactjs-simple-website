@@ -9,11 +9,13 @@ import Contact from './Routes/Contact';
 //Importing react router dom package
 import {BrowserRouter,Route} from 'react-router-dom';
 
+import Nav from './Nav';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+         <Nav/>
          <Route exact path="/" component={Home}/>
          <Route exact path="/about" component={About} />
          <Route exact path="/contact" component={Contact}/>
